@@ -899,6 +899,21 @@ display: block;
     margin-top:4px;
     
 }
+
+.modal-active{
+    transition-property: color, fill, border-color;
+        transition-duration: 250ms, 250ms, 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-active:hover,
+.modal-active:focus-within {
+    
+    color: var(--brand-color-hover);
+    border-color: #2196F3;
+}
+.modal-active::after{
+    fill: var(--brand-color-hover);
+}
 .modal-form-icon-name-svg{
     width: 15px;
     height: 12px;
@@ -949,10 +964,14 @@ display: block;
     flex-direction: column;
     
 }
+.modal-active:hover svg, .modal-active:focus-within svg{
+    fill: var(--brand-color-hover);
+}
 .modal-form-box-textarea{
     display: flex;
         align-items: center;
         border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
         padding:12px;
         height: 120px;
         width: 100%;
@@ -1017,4 +1036,6 @@ display: block;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px;
  }
- 
+ .modal-policy-link{
+    color:var(--brand-color-hover);
+ }

@@ -338,12 +338,10 @@
             <form class="modal">
                 <h2>Zostaw swoje dane w formularzu poniżej</h2>
                 <ul class="modal-form-container">
-                    <li>    
-                        
+                    <li class="modal-form-list">    
                         <label class="" for="user_name_modal">Imie</label>
-                        
-                        <div class="modal-form-box">
-                            <svg class="modal-form-icon-name-svg">
+                        <div class="modal-form-box modal-active">
+                            <svg class="modal-form-icon-name-svg ">
                                 <use href="./images/icons.svg#icon-name"></use>
                             </svg>
                             <input class="modal-input" required type="text" name="user_name_modal" id="user_name_modal" />
@@ -351,8 +349,8 @@
                         </div>
                     </li>
                     <li>
-                        <label class="" for="user_tel_modal">Telefon</label>
-                        <div class="modal-form-box">
+                        <label class="modal-active" for="user_tel_modal">Telefon</label>
+                        <div class="modal-form-box modal-active">
                             <svg class="modal-form-icon-tel-svg">
                                 <use href="./images/icons.svg#icon-tel"></use>
                             </svg>
@@ -361,7 +359,7 @@
                     </li>
                     <li>
                         <label class="" for="user_email_modal">Email</label>
-                        <div class="modal-form-box">
+                        <div class="modal-form-box modal-active">
                             <svg class="modal-form-icon-email-svg">
                                 <use href="./images/icons.svg#icon-mail"></use>
                             </svg>
@@ -370,7 +368,7 @@
                     </li>
                     <li class="modal-form-list">
                         <label class="" for="user_text_modal">Komentarz</label>
-                        <div class="modal-form-box-textarea">
+                        <div class="modal-form-box-textarea modal-active">
                         <textarea class="modal-textarea" placeholder="Wprowadź tekst" name="user_text_modal" id="user_text_modal"></textarea>
                         </div>
                     </li>
@@ -379,7 +377,7 @@
                         <label class="modal-checkbox-label" for="user_checkbox_modal"><svg class="button-modal-checkbox-svg">
                             <use href="./images/icons.svg#icon-approve"></use>
                         </svg></label>
-                        <span>Oświadczam iż akceptuję <a class="" href="">Regulamin</a> i <a class="" href="">Politykę Prywatności.</a></span>
+                        <span>Oświadczam iż akceptuję <a class="modal-policy-link" href="">Regulamin</a> i <a class="modal-policy-link" href="">Politykę Prywatności.</a></span>
                     </li>
                 </ul>
 
