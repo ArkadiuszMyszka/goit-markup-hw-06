@@ -339,12 +339,14 @@
                 <h2>Zostaw swoje dane w formularzu poniżej</h2>
                 <ul class="modal-form-container">
                     <li>
+                        <input class="modal-input" required type="text" name="user_name_modal" id="user_name_modal" />
+
                         <label class="modal-label" for="user_name_modal">Imie</label>
                         <div class="modal-form-box">
                             <svg class="modal-form-icon-name-svg">
                                 <use href="./images/icons.svg#icon-name"></use>
                             </svg>
-                            <input class="modal-input" required type="text"   name="user_name_modal" id="user_name_modal" />
+                            
                         </div>
                     </li>
                     <li>
@@ -372,8 +374,10 @@
                         </div>
                     </li>
                     <li class="modal-checkbox">
-                        <label class="" for="user_checkbox_modal"></label>
-                        <input class="" type="checkbox" name="user_checkbox_modal" required id="user_checkbox_modal" />
+                        <input class="modal-checkbox-input" type="checkbox" name="user_checkbox_modal" required id="user_checkbox_modal" />
+                        <label class="modal-checkbox-label" for="user_checkbox_modal">aaa<svg class="button-modal-checkbox-svg">
+                            <use href="./images/icons.svg#icon-approve"></use>
+                        </svg></label>
                         <span>Oświadczam iż akceptuję <a class="" href="">Regulamin</a> i <a class="" href="">Politykę Prywatności.</a></span>
                     </li>
                 </ul>
