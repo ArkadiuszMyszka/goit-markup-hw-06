@@ -749,6 +749,9 @@ object-fit: contain;
 }
 
 .modal{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
     position: absolute;
     top:50%;
     left:50%;
@@ -830,18 +833,12 @@ display: block;
 }
 .form-footer{
     display: flex;
-    
-    
-    
-    
 }
 .footer-form-box h3{
     color:var(--brand-color-font-overall-2);
     margin-bottom: 20px;
 }
-.form-footer-label-email{
 
-}
 .form-footer-button{
     display: flex;
     align-items: center;
@@ -876,4 +873,8 @@ display: block;
 .form-footer-input-email::placeholder{
     
     color:var(--color-footer-placeholder);
+}
+.modal h2{
+   
+
 }

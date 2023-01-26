@@ -335,9 +335,25 @@
         </div>
         
         <div class="backdrop is-hidden" data-modal>
-            <div class=" modal">
-                <button data-modal-close class="button-modal-close" type="button"><svg class="button-modal-close-svg"><use href="./images/icons.svg#icon-cross"></use></svg></button>
-            </div>
+            <form class="modal">
+                    <h2>Zostaw swoje dane w formularzu poniżej</h2>
+                    <label class="" for="user_name_modal"></label>
+                    <input class="" type="text" placeholder="E-mail" name="user_name_modal" id="user_name_modal" />
+                    <label class="" for="user_tel_modal"></label>
+                    <input class="" type="tel" placeholder="E-mail" name="user_tel_modal" id="user_tel_modal" />
+                    <label class="" for="user_email_modal"></label>
+                    <input class="" type="email" placeholder="E-mail" name="user_email_modal" id="user_email_modal" />
+                    <label class="" for="user_text_modal"></label>
+                    <textarea class="" placeholder="Text" name="user_text_modal" id="user_text_modal"></textarea>
+                    <label class="" for="user_checkbox_modal"></label>
+                    <input class="" type="checkbox" name="user_checkbox_modal" id="user_checkbox_modal" />
+                    <button class="form-footer-button" type="submit">Zapisz się <svg class="form-footer-button-svg">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg></button>
+                    </form>
+                    <button data-modal-close class="button-modal-close" type="button"><svg class="button-modal-close-svg">
+                            <use href="./images/icons.svg#icon-cross"></use>
+                        </svg></button>
         </div>
 
         <script src="./js/modal.js"></script>
