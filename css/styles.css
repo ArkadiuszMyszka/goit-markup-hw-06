@@ -3,6 +3,7 @@
     --brand-color-font-overall: #212121;
     --brand-color-font-overall-2:#FFFFFF;
     --brand-color-hover: #2196F3;
+    --brand-color-hover-2:#268d19;
     --brand-color-hover-filter: invert(43%) sepia(53%) saturate(1652%) hue-rotate(184deg) brightness(101%) contrast(91%);
     --brand-color-background: #FFFFFF;
     --brand-color-titleleft: #2196F3;
@@ -838,6 +839,14 @@ display: block;
 }
 .form-footer{
     display: flex;
+    transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-footer button{
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form-box h3{
     color:var(--brand-color-font-overall-2);
@@ -1035,7 +1044,22 @@ display: block;
         outline:none;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px;
+            cursor: pointer;
+ }
+ .modal button{
+    transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
  .modal-policy-link{
     color:var(--brand-color-hover);
+ }
+ .modal-form-button-send:hover, .modal-form-button-send:focus{
+    background-color:var(--brand-color-hover-2);
+ }
+ .button-modal-close:hover, .button-modal-close:focus{
+    background-color: var(--brand-color-hover-2);
+ }
+ .form-footer-button:hover, .form-footer-button:focus{
+    background-color: var(--brand-color-hover-2);
  }
